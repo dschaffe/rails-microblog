@@ -1,24 +1,29 @@
-# README
+# A simple Ruby on Rails application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting started
 
-Things you may want to cover:
+To start clone the repo then install the needed gems
 
-* Ruby version
+```
+$ bundle install --without production
+```
 
-* System dependencies
+then migrate the database
+```
+$ rails db:migrate
+```
 
-* Configuration
+run tests to make sure everything is setup
+```
+$ rails test
+```
 
-* Database creation
+if the test suite passes, run the server
+```
+$ rails server
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+to run the server on c9
+```
+rails server -b 0.0.0.0 -p 8080
+```
