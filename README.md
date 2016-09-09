@@ -23,7 +23,7 @@ if the test suite passes, run the server
 $ rails server
 ```
 
-to run the server on c9
+to run the server on c9 (IP=0.0.0.0 PORT=8080)
 ```
-rails server -b 0.0.0.0 -p 8080
+rails server -b $IP -p $PORT
 ```
