@@ -25,5 +25,15 @@ $ rails server
 
 to run the server on c9 (IP=0.0.0.0 PORT=8080)
 ```
-rails server -b $IP -p $PORT
+$ rails server -b $IP -p $PORT
+```
+
+Setup heroku from c9
+```
+$ heroku login
+$ heroku keys:add
+$ heroku create
+$ git push master heroku
+$ heroku create
+$
 ```
