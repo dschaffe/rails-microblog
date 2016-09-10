@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'bcrypt'
 
 class UserTest < ActiveSupport::TestCase
   def setup
@@ -45,7 +46,6 @@ class UserTest < ActiveSupport::TestCase
       assert_not @user.valid?, "#{invalid_address.inspect} should be invalid"
     end
   end
-
   test "email addresses should be unique" do
     duplicate_user = @user.dup
     duplicate_user.email = @user.email.upcase
