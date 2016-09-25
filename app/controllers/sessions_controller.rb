@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
         redirect_back_or user
       else
         message = "Account not activated."
-        message += "Check your email for the activation link."
+        message += "Please wait while your request is being reviewed.  You will receive an email soon."
         flash[:warning] = message
         redirect_to root_url
       end
